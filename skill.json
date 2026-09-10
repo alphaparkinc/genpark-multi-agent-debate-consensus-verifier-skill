@@ -1,0 +1,48 @@
+{
+  "name": "genpark-multi-agent-debate-consensus-verifier-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Multi-agent debate cross-examination arbitration protocol detecting factual contradictions and synthesizing high-confidence research verdicts.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "multi-agent-reasoning",
+  "tags": [
+    "super-agent",
+    "multi-agent-debate",
+    "consensus-verification",
+    "hallucination-mitigation",
+    "deepseek-r1"
+  ],
+  "inputs": {
+    "research_topic": {
+      "type": "string",
+      "default": "Compare solid-state battery vs lithium-ion cycle life"
+    },
+    "proponent_confidence": {
+      "type": "number",
+      "default": 0.88
+    },
+    "opponent_confidence": {
+      "type": "number",
+      "default": 0.74
+    }
+  },
+  "outputs": {
+    "consensus_id": {
+      "type": "string"
+    },
+    "arbitrated_verdict": {
+      "type": "string"
+    },
+    "composite_confidence_score": {
+      "type": "number"
+    },
+    "hallucination_risk_level": {
+      "type": "string"
+    },
+    "verified_consensus_dossier_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
